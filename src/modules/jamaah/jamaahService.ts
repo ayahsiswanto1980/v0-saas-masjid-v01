@@ -15,7 +15,7 @@ export class JamaahService {
       store.setTotal(result.total)
       if (params) store.setPagination(params)
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Failed to fetch jamaah'
+      const message = error instanceof Error ? error.message : 'Gagal mengambil data jamaah'
       store.setError(message)
     } finally {
       store.setLoading(false)

@@ -21,7 +21,7 @@ export class AuthRepository {
       await indexedDBDatasource.create('users', response.user)
       return response
     } catch (error) {
-      throw new Error(`Login failed: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      throw new Error(`Login gagal: ${error instanceof Error ? error.message : 'Kesalahan tidak diketahui'}`)
     }
   }
 
@@ -32,7 +32,7 @@ export class AuthRepository {
       const tx = (await (indexedDBDatasource as any).db).transaction('users', 'readwrite')
       tx.objectStore('users').clear()
     } catch (error) {
-      console.error('[v0] Logout error:', error)
+      console.error('[v0] Kesalahan logout:', error)
     }
   }
 
@@ -42,7 +42,7 @@ export class AuthRepository {
       await indexedDBDatasource.create('users', response)
       return response
     } catch (error) {
-      throw new Error(`Failed to get user: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      throw new Error(`Gagal mendapatkan pengguna: ${error instanceof Error ? error.message : 'Kesalahan tidak diketahui'}`)
     }
   }
 
@@ -54,7 +54,7 @@ export class AuthRepository {
       await indexedDBDatasource.create('users', response.user)
       return response
     } catch (error) {
-      throw new Error(`Registration failed: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      throw new Error(`Pendaftaran gagal: ${error instanceof Error ? error.message : 'Kesalahan tidak diketahui'}`)
     }
   }
 

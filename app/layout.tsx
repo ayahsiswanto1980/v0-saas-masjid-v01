@@ -6,8 +6,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Mosque Management SaaS',
-  description: 'Multi-tenant solution for managing mosque operations, schedules, and communities',
+  title: 'Sistem Manajemen Masjid SaaS',
+  description: 'Solusi multi-tenant untuk mengelola operasional masjid, jadwal, dan komunitas',
   generator: 'v0.app',
   icons: {
     icon: [

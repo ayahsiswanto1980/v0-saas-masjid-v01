@@ -8,10 +8,10 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-5xl font-bold text-foreground mb-4">
-            Mosque Management SaaS
+            Sistem Manajemen Masjid SaaS
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive multi-tenant solution for managing mosque operations, schedules, and communities
+            Solusi multi-tenant komprehensif untuk mengelola operasional masjid, jadwal, dan komunitas
           </p>
         </div>
 
@@ -20,30 +20,30 @@ export default function Home() {
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle>Multi-Tenant</CardTitle>
-              <CardDescription>Support multiple mosques with isolated data</CardDescription>
+              <CardDescription>Dukung beberapa masjid dengan isolasi data terpisah</CardDescription>
             </CardHeader>
             <CardContent>
-              Each mosque has its own workspace with complete data isolation and role-based access control.
+              Setiap masjid memiliki ruang kerja sendiri dengan isolasi data lengkap dan kontrol akses berbasis peran.
             </CardContent>
           </Card>
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Schedule Management</CardTitle>
-              <CardDescription>Manage prayer times and events</CardDescription>
+              <CardTitle>Manajemen Jadwal</CardTitle>
+              <CardDescription>Kelola waktu shalat dan acara</CardDescription>
             </CardHeader>
             <CardContent>
-              Easily schedule prayers, classes, and events with automated notifications for the community.
+              Jadwalkan shalat, kelas, dan acara dengan mudah dengan notifikasi otomatis untuk komunitas.
             </CardContent>
           </Card>
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Offline Ready</CardTitle>
-              <CardDescription>Works without internet connection</CardDescription>
+              <CardTitle>Siap Offline</CardTitle>
+              <CardDescription>Bekerja tanpa koneksi internet</CardDescription>
             </CardHeader>
             <CardContent>
-              Built with IndexedDB for offline support, syncs automatically when connection is restored.
+              Dibangun dengan IndexedDB untuk dukungan offline, sinkronisasi otomatis saat koneksi dipulihkan.
             </CardContent>
           </Card>
         </div>
@@ -51,31 +51,31 @@ export default function Home() {
         {/* Call to Action */}
         <div className="bg-card rounded-lg shadow-md p-8 text-center border border-border">
           <h2 className="text-3xl font-bold text-foreground mb-4">
-            Ready to get started?
+            Siap untuk memulai?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            This is a foundational SaaS architecture ready for implementation. Check the ARCHITECTURE.md file for the complete technical design.
+            Ini adalah arsitektur SaaS dasar yang siap untuk diimplementasikan. Periksa file ARCHITECTURE.md untuk desain teknis lengkap.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button className="px-8">
-              View Documentation
+              Lihat Dokumentasi
             </Button>
             <Button variant="outline" className="px-8">
-              Contact Sales
+              Hubungi Penjualan
             </Button>
           </div>
         </div>
 
         {/* Info section */}
         <div className="mt-16 p-6 bg-card rounded-lg border border-border">
-          <h3 className="font-semibold text-foreground mb-2">Architecture Foundation Ready</h3>
+          <h3 className="font-semibold text-foreground mb-2">Fondasi Arsitektur Siap</h3>
           <p className="text-muted-foreground text-sm">
-            This project includes a complete architectural design with:
-            <br />• 3-Tier layer architecture (Presentation → Service → Data)
-            <br />• Repository pattern for seamless IndexedDB → PostgreSQL migration
-            <br />• Multi-tenant support with tenant_id isolation
-            <br />• Offline-first with sync capabilities
-            <br />• Type-safe data models compatible with PostgreSQL schema
+            Proyek ini mencakup desain arsitektur lengkap dengan:
+            <br />• Arsitektur layer 3-Tier (Presentasi → Layanan → Data)
+            <br />• Pola Repository untuk migrasi mulus IndexedDB → PostgreSQL
+            <br />• Dukungan multi-tenant dengan isolasi tenant_id
+            <br />• Offline-first dengan kemampuan sinkronisasi
+            <br />• Model data yang aman tipe kompatibel dengan skema PostgreSQL
           </p>
         </div>
       </div>

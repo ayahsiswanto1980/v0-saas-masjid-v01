@@ -38,14 +38,14 @@ export function JamaahForm({ jamaah, onSubmit, onCancel }: JamaahFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1">Name *</label>
+        <label className="block text-sm font-medium text-foreground mb-1">Nama *</label>
         <Input
           type="text"
           name="nama"
           value={formData.nama}
           onChange={handleChange}
           required
-          placeholder="Full name"
+          placeholder="Nama lengkap"
         />
       </div>
 
@@ -56,45 +56,45 @@ export function JamaahForm({ jamaah, onSubmit, onCancel }: JamaahFormProps) {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Email address"
+          placeholder="Alamat email"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1">Phone</label>
+        <label className="block text-sm font-medium text-foreground mb-1">Nomor Telepon</label>
         <Input
           type="tel"
           name="noHp"
           value={formData.noHp}
           onChange={handleChange}
-          placeholder="Phone number"
+          placeholder="Nomor telepon"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1">Address</label>
+        <label className="block text-sm font-medium text-foreground mb-1">Alamat</label>
         <Input
           type="text"
           name="alamat"
           value={formData.alamat}
           onChange={handleChange}
-          placeholder="Address"
+          placeholder="Alamat lengkap"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1">ID Card Number</label>
+        <label className="block text-sm font-medium text-foreground mb-1">Nomor Kartu Keluarga</label>
         <Input
           type="text"
           name="noKartuKeluarga"
           value={formData.noKartuKeluarga}
           onChange={handleChange}
-          placeholder="Family card number"
+          placeholder="Nomor kartu keluarga"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-foreground mb-1">Family Status</label>
+        <label className="block text-sm font-medium text-foreground mb-1">Status Keluarga</label>
         <select
           name="statusKeluarga"
           value={formData.statusKeluarga}
@@ -110,10 +110,10 @@ export function JamaahForm({ jamaah, onSubmit, onCancel }: JamaahFormProps) {
 
       <div className="flex gap-2 justify-end">
         <Button type="button" variant="outline" onClick={onCancel}>
-          Cancel
+          Batal
         </Button>
         <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Saving...' : 'Save'}
+          {isSubmitting ? 'Menyimpan...' : 'Simpan'}
         </Button>
       </div>
     </form>

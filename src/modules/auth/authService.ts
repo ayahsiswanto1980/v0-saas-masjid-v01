@@ -16,7 +16,7 @@ export class AuthService {
       const tenant = { id: response.user.tenantId, nama: 'Current Tenant' } as any
       store.setUser(response.user)
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Login failed'
+      const message = error instanceof Error ? error.message : 'Login gagal'
       store.setError(message)
       throw error
     } finally {
@@ -47,7 +47,7 @@ export class AuthService {
       })
       store.setUser(response.user)
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Registration failed'
+      const message = error instanceof Error ? error.message : 'Pendaftaran gagal'
       store.setError(message)
       throw error
     } finally {
@@ -67,7 +67,7 @@ export class AuthService {
       }
       return null
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Failed to restore session'
+      const message = error instanceof Error ? error.message : 'Gagal memulihkan sesi'
       store.setError(message)
       return null
     } finally {

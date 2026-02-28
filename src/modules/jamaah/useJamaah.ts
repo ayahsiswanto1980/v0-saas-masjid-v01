@@ -22,7 +22,7 @@ export const useJamaah = () => {
       if (currentTenant) {
         return jamaahService.createJamaah(currentTenant.id, jamaah)
       }
-      throw new Error('No tenant selected')
+      throw new Error('Tidak ada tenant yang dipilih')
     },
     [currentTenant]
   )

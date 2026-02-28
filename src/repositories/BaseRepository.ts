@@ -65,7 +65,7 @@ export abstract class BaseRepository<T extends { id: string }> implements IRepos
 
   async update(id: string, item: Partial<T>): Promise<T> {
     const existing = await this.read(id)
-    if (!existing) throw new Error('Item not found')
+    if (!existing) throw new Error('Item tidak ditemukan')
 
     const updated = { ...existing, ...item, updatedAt: new Date() }
 

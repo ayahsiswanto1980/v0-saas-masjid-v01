@@ -26,7 +26,7 @@ export const delay = (ms: number): Promise<void> => {
 export const handleError = (error: unknown): string => {
   if (error instanceof Error) return error.message
   if (typeof error === 'string') return error
-  return 'An unknown error occurred'
+  return 'Terjadi kesalahan yang tidak diketahui'
 }
 
 export const isOnline = (): boolean => {

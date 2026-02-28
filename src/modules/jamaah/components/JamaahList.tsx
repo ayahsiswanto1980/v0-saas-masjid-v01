@@ -19,7 +19,7 @@ export function JamaahList() {
   }
 
   const handleDelete = async (id: string) => {
-    if (confirm('Delete this member?')) {
+    if (confirm('Hapus anggota ini?')) {
       await deleteJamaah(id)
     }
   }
@@ -29,9 +29,9 @@ export function JamaahList() {
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold text-foreground">Anggota Jamaah</h1>
         <div className="flex gap-2">
-          <Button onClick={() => loadJamaah()}>Refresh</Button>
+          <Button onClick={() => loadJamaah()}>Segarkan</Button>
           <Button onClick={() => setShowForm(!showForm)}>
-            {showForm ? 'Cancel' : 'Add Member'}
+            {showForm ? 'Batal' : 'Tambah Anggota'}
           </Button>
         </div>
       </div>
@@ -50,11 +50,11 @@ export function JamaahList() {
 
       {isLoading ? (
         <div className="text-center py-12">
-          <p className="text-muted-foreground">Loading members...</p>
+          <p className="text-muted-foreground">Memuat anggota...</p>
         </div>
       ) : jamaah.length === 0 ? (
         <div className="text-center py-12">
-          <p className="text-muted-foreground">No members added yet</p>
+          <p className="text-muted-foreground">Belum ada anggota ditambahkan</p>
         </div>
       ) : (
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

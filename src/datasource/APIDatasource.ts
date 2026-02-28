@@ -37,7 +37,7 @@ export class APIDatasource {
 
     const result: ApiResponse<T> = await response.json()
     if (!result.success) {
-      throw new Error(result.error || 'Unknown error')
+      throw new Error(result.error || 'Kesalahan tidak diketahui')
     }
 
     return result.data!
@@ -50,12 +50,12 @@ export class APIDatasource {
     })
 
     if (!response.ok) {
-      throw new Error(`API Error: ${response.statusText}`)
+      throw new Error(`Kesalahan API: ${response.statusText}`)
     }
 
     const result: ApiResponse<T> = await response.json()
     if (!result.success) {
-      throw new Error(result.error || 'Unknown error')
+      throw new Error(result.error || 'Kesalahan tidak diketahui')
     }
 
     return result.data!
@@ -69,12 +69,12 @@ export class APIDatasource {
     })
 
     if (!response.ok) {
-      throw new Error(`API Error: ${response.statusText}`)
+      throw new Error(`Kesalahan API: ${response.statusText}`)
     }
 
     const result: ApiResponse<T> = await response.json()
     if (!result.success) {
-      throw new Error(result.error || 'Unknown error')
+      throw new Error(result.error || 'Kesalahan tidak diketahui')
     }
 
     return result.data!

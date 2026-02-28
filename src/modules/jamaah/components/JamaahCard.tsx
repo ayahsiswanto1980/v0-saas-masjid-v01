@@ -23,7 +23,7 @@ export function JamaahCard({ jamaah, onDelete }: JamaahCardProps) {
 
         {jamaah.noHp && (
           <div className="text-sm text-muted-foreground">
-            <span className="font-medium">Phone:</span> {jamaah.noHp}
+            <span className="font-medium">Telepon:</span> {jamaah.noHp}
           </div>
         )}
 
@@ -34,12 +34,12 @@ export function JamaahCard({ jamaah, onDelete }: JamaahCardProps) {
         )}
 
         <div className="text-xs text-muted-foreground">
-          <span className="font-medium">Joined:</span> {formatDate(jamaah.createdAt)}
+          <span className="font-medium">Bergabung:</span> {formatDate(jamaah.createdAt)}
         </div>
 
         <div className="flex gap-2 justify-end pt-2">
           <Button variant="outline" size="sm" onClick={onDelete}>
-            Delete
+            Hapus
           </Button>
         </div>
       </div>
